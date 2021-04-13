@@ -60,7 +60,7 @@ def receive():
 
         print(f'[+] Nickname of the client is {nickname}')
         broadcast(f'[+] {nickname} joined the chat...'.encode('ascii'))
-        print("/n")
+        
         client.send("[+] Connected to the server...".encode('ascii'))
 
         # Definig a thread and run a thread. We will run one thread for each client so that they can run simultaneously
